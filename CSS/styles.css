@@ -1,0 +1,56 @@
+:root {
+  --color1: #f7e7d4;
+  --color2: #fb8604;
+  --color3: #1258dc;
+  --color4: #144eb8;
+  --color5: #091834;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: var(--color5);
+  font-style: italic;
+  font-variant: small-caps;
+  font-size:xx-large;
+}
+
+#skillslist {
+  columns: 3;
+}
+
+.sectionHeader {
+  color: var(--color4);
+  font-style: italic;
+  font-variant: small-caps;
+}
+
+table {
+  margin: 14px;
+  border-collapse: separate;
+  border-spacing: 7px;
+  padding: 7px;
+  width: 99%;
+}
+
+caption {
+    font-style: italic;
+    color: var(--color2);
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+
+th {
+  font-style: italic;
+  font-variant: small-caps;
+  color: var(--color3);
+}
+
+td {
+  border:  1px solid var(--color4);
+  vertical-align: top;
+  padding: 7px;
+  color: var(--color5);
+}
