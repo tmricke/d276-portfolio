@@ -1,11 +1,142 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tom Ricke | Career Goals</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Career Goals</h1>
+      <p>My path into IT: learning, building, and documenting projects.</p>
+    </header>
+
+    <nav>
+      <a href="resume.html">Resume</a> |
+      <a href="cover-letter.html">Cover Letter</a> |
+      <a href="career-goals.html">Career Goals</a>
+    </nav>
+
+    <main>
+      <!-- IMAGE -->
+      <section>
+        <h2 class="sectionHeader">My Career Focus</h2>
+        <img
+          src="images/it-goals.jpg"
+          alt="Laptop and notebook representing IT career goals"
+          width="600"
+        />
+        <p>
+          Short-term: entry-level IT support. Mid-term: systems/cloud.
+          Long-term: advanced technical roles and leadership.
+        </p>
+      </section>
+
+      <!-- AUDIO -->
+      <section>
+        <h2 class="sectionHeader">Audio</h2>
+        <p>A short audio clip (placeholder is fine).</p>
+        <audio controls>
+          <source src="media/intro-audio.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </section>
+
+      <!-- VIDEO -->
+      <section>
+        <h2 class="sectionHeader">Video</h2>
+        <p>A short video clip (placeholder is fine).</p>
+        <video controls width="600">
+          <source src="media/intro-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+
+      <!-- CONTACT FORM -->
+      <section>
+        <h2 class="sectionHeader">Contact Me</h2>
+
+        <form action="https://wp.zybooks.com/form-viewer.php" method="post">
+          <fieldset>
+            <legend>Your Information</legend>
+
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required />
+
+            <br /><br />
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required />
+
+            <br /><br />
+
+            <label for="companyName">Company Name:</label>
+            <input type="text" id="companyName" name="companyName" />
+
+            <br /><br />
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required />
+
+            <br /><br />
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" />
+
+            <br /><br />
+
+            <label for="message">Message:</label><br />
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              cols="40"
+              required
+            ></textarea>
+          </fieldset>
+
+          <br />
+
+          <fieldset>
+            <legend class="sectionHeader">Contact Preferences</legend>
+
+            <p>Best Contact Time:</p>
+            <label>
+              <input type="radio" name="bestTime" value="am" required />
+              a.m.
+            </label>
+            <label>
+              <input type="radio" name="bestTime" value="pm" />
+              p.m.
+            </label>
+            <label>
+              <input type="radio" name="bestTime" value="anytime" />
+              anytime
+            </label>
+
+            <br /><br />
+
+            <label for="contactMethod">Preferred Contact Method:</label>
+            <select id="contactMethod" name="contactMethod" required>
+              <option value="" selected disabled>Select one</option>
+              <option value="phone">phone</option>
+              <option value="email">email</option>
+              <option value="text">text</option>
+            </select>
+          </fieldset>
+
+          <br />
+
+          <button type="submit">Send</button>
+          <button type="reset">Reset</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Tom Ricke | Academic Portfolio</p>
+    </footer>
+  </body>
 </html>
