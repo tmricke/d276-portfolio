@@ -6,7 +6,11 @@
     <title>Tom Ricke's Resume</title>
     <link rel="stylesheet" href="CSS/styles.css" />
   </head>
+
   <body>
+
+    <!--Header TMR 01/31/26-->
+
     <header>
       <h1>Tom Ricke</h1>
       <div id="currentDate"></div>
@@ -21,13 +25,17 @@
         Ph. (307) 630-3474
       </p>
     </header>
+
     <nav>
       <a href="resume.html">Home</a> |
       <a href="cover-letter.html">Cover-Letter</a> |
       <a href="career-goals.html">Career-Goals</a>
     </nav>
+
     <main>
+
       <!-- OBJECTIVE STATEMENT - tmr 01/31/26 -->
+
       <section>
         <h2 class="sectionHeader">Objective</h2>
         <p>
@@ -41,8 +49,11 @@
           tech to an entry-level IT support role
         </p>
       </section>
+
       <hr />
+
       <!-- Skills - tmr 01/31/26 -->
+
       <section>
         <h2 class="sectionHeader">Skills</h2>
         <ul id="skillslist">
@@ -54,10 +65,14 @@
           <li>troubleshooting</li>
         </ul>
       </section>
+
       <hr />
+
       <!-- HIGHLIGHTS - tmr 01/31/26 -->
+
       <section>
         <h2 class="sectionHeader">Highlights</h2>
+
         <table>
           <tr>
             <th>Troubleshooting</th>
@@ -98,11 +113,16 @@
             <td></td>
           </tr>
         </table>
+
       </section>
+
       <hr />
+
       <!-- Professional Experience - tmr 02/01/26 -->
+
       <section>
         <h2 class="sectionHeader">Professional Experience</h2>
+
         <table>
           <caption>
             Career Summary
@@ -162,10 +182,16 @@
             <li>Supported base-wide movement logistics.</li>
           </ul>
         </article>
+
       </section>
+
       <hr />
-      <section>
+
         <!-- Certifications - tmr 02/01/25 -->
+
+      <section>
+        
+
         <h2 class="sectionHeader">Certifications</h2>
         <ul>
           <li>Comptia A+ - 2025</li>
@@ -180,8 +206,10 @@
       </p>
     </footer>
 
+      <!--Script tmr 02/5/22-->
+
     <script>
-      const dateDiv = document.getElementById("currentDate");
+      const dateDiv = document.getElementById("currentDate");      
       const today = new Date().toLocaleDateString();
       dateDiv.textContent = "Date: " + today;
       console.log("Resume loaded successfully. Date set to:", today);
